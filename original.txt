@@ -1,0 +1,47 @@
+package example.org;
+ 
+import java.util.ArrayList;
+ 
+public class CaseConverter {
+        
+         public static String camelCaseToSnakeCase(String input) {
+              char[] inputCharacters = input.toCharArray();
+              ArrayList<Integer> positions = new ArrayList<Integer>();
+             
+             
+              int index = 0;
+              for(char ch: inputCharacters) {
+                     if(Character.isUpperCase(ch)){
+                           // if Character.isUpperCase(string(index +1){
+                           // else
+                           positions.add((index);
+                     }
+                          
+                     index ++;
+              }
+             
+              int firstCap = positions.get(0);
+              int LastCap = positions.get(positions.size() - 1);
+             
+              // input(firstCap).toLower()
+              // input(LastCap).toLower()
+             
+              // for loop
+              // for char: positions(2, second last character)
+                     // input(positon) = '_' + input(position).toLower();
+             
+              // input.put(positon - 1, '_')
+             
+             
+                          
+                          
+           
+         }
+        
+              public static void main(String[] args) {
+           // Expected output:
+           // this_is_some_text
+           System.out.println(CaseConverter.camelCaseToSnakeCase("thisIsSomeText"));
+         }
+       }
+ 
