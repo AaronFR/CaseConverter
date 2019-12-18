@@ -46,7 +46,7 @@ public class CaseConverter {
         
        public static String camelCaseToSnakeCase(String text) {
               /* Simplist Solution
-              return input.replaceAll("(.)(\\p{Upper})", "$1_$2").toLowerCase();
+              return text.replaceAll("(.)(\\p{Upper})", "$1_$2").toLowerCase();
 
               (.) = 1st group matches any character
               (\\p{Upper}) = pattern match to {Upper case characters}
